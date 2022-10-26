@@ -7,15 +7,24 @@
 /* main grid container*/
 .etch{
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     text-align: center;
     width: 480px;
     height: 480px;
+    border: 1px black solid;
 }
-.etchy{
-    display: grid;
-}
-.gridBackBlack{
+
+.black{
     background-color: black;    
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
 }

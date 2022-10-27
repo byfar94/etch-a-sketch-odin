@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="increase-grid">choose grid size</button>
-    <div class="contain">
-        <div class="etch">
+    <div class="main-container">
+        <div class="btn-container">
+            <button class="increase-grid">Grid Size +/-</button>
+            <div class="color-container">
+                <button class = "blackbtn"> BLACK </button>
+                <button class = "redbtn"> RED </button>
+                <button class = "bluebtn"> BLUE </button>
+                <button class = "yellowbtn"> Yellow </button>
+            </div>
+            <button class = "clearbtn"> reset </button>
+        </div>
+        <div class="contain">
+            <div class="etch">
+            </div>
+        </div>
         </div>
     </div>
-    <div class="btn-container">
-        <button onclick="clearGrid()" class = "clearButton"> reset </button>
-        <button class = "redbtn"> RED </button>
-        <button class = "blackbtn"> BLACK </button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>

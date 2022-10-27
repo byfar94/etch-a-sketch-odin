@@ -1,3 +1,12 @@
 # etch-a-sketch-odin
 
-learned about DOM manipulation and events.
+CSS:
+    using display: grid
+
+Javascript:
+    for loop
+    DOM manipulation and events
+
+
+        adding CSS styling using Javascript
+        adding classes using Javascript

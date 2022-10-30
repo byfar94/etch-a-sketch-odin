@@ -1,33 +1,56 @@
-/* main container flex box to center*/
-.contain{
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.3) url(images/skyscrapers.jpg);
+    background-blend-mode: multiply;
+    font-family:'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    color: whitesmoke;
+    border-bottom: 1px cyan solid;
+    margin: 0px 100px 5px;
+
+}
+
+/*  container flex box to center*/
+.contain{
+    display: flex;
+    justify-content: center;
+    height: 480px;
+    width: 480;
+    padding-left: 130px;
 }
 /* main grid container*/
 .etch{
     display: grid;
-    text-align: center;
     width: 480px;
     height: 480px;
     border: 1px black solid;
+    background-color: white;
+    border-radius: 5px;
 }
 /* classes to change color*/
-.black{
-    background-color: black;    
+.indigo{
+    background-color: #01012b;    
 }
 
 .red{
-    background-color: red;
+    background-color: #ff2a6d;
 }
 
-.blue{
-    background-color: blue;
+.cyan{
+    background-color: #05d9e8;
 }
 
-.yellow{
-    background-color: yellow;
+.pink{
+    background-color: #fe75fe;
 }
 
 /* button containers*/
@@ -36,68 +59,210 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
 .btn-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 25px;
 }
 
 .color-container{
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap:10px;
 }
+
 
 /* button styling */
-.blackbtn, .redbtn, .bluebtn, .yellowbtn{
-    border-radius: 50px;
-    background-color: white;
-    border: 1px black solid;
+.indigobtn, .redbtn, .cyanbtn, .pinkbtn, .eraserbtn{
+    border-radius: 5px;
+    border: none;
+    min-width: 70px;
+    min-height: 35px;
+    font-family: inherit;
 }
 
-/*black button */
-.blackbtn{
-    color: black;
+/*indigo button */
+.indigobtn{
+    color: white;
+    background-color: #01012b;
     transition: all .2s ease-in-out;
+    opacity: 0.7;
 }
 
-.blackbtn:hover{
+.indigobtn:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
 }
 
 /* red button */
 .redbtn{
-    color: red;
+    color: white;
+    background-color: #ff2a6d;
     transition: all .2s ease-in-out;
+    opacity: 0.7;
 }
 
 .redbtn:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
 }
 
-/* blue button */
-.bluebtn{
-    color: blue;
+/* cyan button */
+.cyanbtn{
+    color: white;
+    background-color: #05d9e8;
     transition: all .2s ease-in-out;
+    opacity: 0.7;
 }
 
-.bluebtn:hover{
+.cyanbtn:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
 }
 
-/* yellow button */
-.yellowbtn{
-    color: yellow;
+/* pink button */
+.pinkbtn{
+    color: white;
+    background-color: #fe75fe;
     transition: all .2s ease-in-out;
+    opacity: 0.7;
 }
 
-.yellowbtn:hover{
+.pinkbtn:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
+}
+/* eraser button */
+.eraserbtn{
+    color: white;
+    transition: all .2s ease-in-out;
+    background-color: darkgrey;
+    opacity: 0.7;
+}
+
+.eraserbtn:hover{
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
+}
+/* reset button */
+
+.clearbtn{
+    color: #ff2a6d;
+    opacity: 0.7;
+    font-family: inherit;
+}
+
+.clearbtn:hover{
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0 3px 6px black;
+}
+
+/* slider */
+
+.slider{
+    appearance: none;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #fe75fe;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.slider:hover{
+    opacity: 1.0;
+}
+
+.slider::-ms-thumb{
+    appearance: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #05d9e8;
+}
+
+.slide-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-label, .slide-plus, .slide-minus{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.slide-plus{
+    padding-bottom: 60px;
+}
+
+.slide-minus{
+    padding-top: 60px;
+}
+
+/* footer */
+
+footer{
+    margin-top: auto;
+    background-color: black;
+}
+.foot-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.foot-contain p{
+    color: white;
+}
+.foot-contain h3{
+    color: cyan;
+}
+.git-link{
+    color: white;
+    text-decoration: none;
+}
+
+.git-link:hover{
+    color: #05d9e8;
+}
+
+/* phone */
+
+@media (max-width: 700px){
+
+    .main-title{
+        text-align: center;
+    }
+    
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        overflow: scroll;
+    }
+    .contain{
+        display: flex;
+        justify-content: center;
+        height: 480px;
+        width: 480;
+        margin-right: 120px;
+    }
 }

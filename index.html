@@ -5,26 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 class="main-title"> Cyber Scribble</h1>
+    </header>
     <div class="main-container">
         <div class="btn-container">
-            <button class="increase-grid">Grid Size +/-</button>
             <div class="color-container">
-                <button class = "blackbtn"> BLACK </button>
-                <button class = "redbtn"> RED </button>
-                <button class = "bluebtn"> BLUE </button>
-                <button class = "yellowbtn"> Yellow </button>
+                <button class = "indigobtn"> Indigo </button>
+                <button class = "redbtn"> Red </button>
+                <button class = "cyanbtn"> Cyan </button>
+                <button class = "pinkbtn"> Pink </button>
+                <button class = "eraserbtn"> Eraser</button>
             </div>
-            <button class = "clearbtn"> reset </button>
+            <button class = "clearbtn"> Reset </button>
         </div>
         <div class="contain">
-            <div class="etch">
-            </div>
+            <div class="etch"></div>
         </div>
+        <div class="slide-contain">
+            <h3 class="slide-label">Draw Size</h3>
+            <h3 class ="slide-plus">++</h3>
+            <input type="range" name="slide" min="2" max="64" value="16" class="slider">
+            <h3 class="slide-minus">--</h3>
+        </div>
+        <div class="col-contain">
+            <div class="current-color"></div>
         </div>
     </div>
+    <footer>
+        <div class="foot-contain">
+            <p>Made by: </p>
+            <a class="git-link" href="https://github.com/byfar94"> byfar94</a>
+            <h3> | </h3>
+            <a class="git-link" href="https://github.com/byfar94/etch-a-sketch-odin">Repo</a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

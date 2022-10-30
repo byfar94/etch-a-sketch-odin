@@ -16,7 +16,30 @@ header{
     color: whitesmoke;
     border-bottom: 1px cyan solid;
     margin: 0px 100px 5px;
+}
 
+/* button containers*/
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.color-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 /*  container flex box to center*/
@@ -51,29 +74,6 @@ header{
 
 .pink{
     background-color: #fe75fe;
-}
-
-/* button containers*/
-
-.main-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.btn-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-}
-
-.color-container{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
 }
 
 
@@ -215,10 +215,11 @@ header{
     padding-top: 60px;
 }
 
+
 /* footer */
 
 footer{
-    margin-top: auto;
+    margin-top: 5px;
     background-color: black;
 }
 .foot-contain{
@@ -226,6 +227,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 30px;
 }
 .foot-contain p{
     color: white;

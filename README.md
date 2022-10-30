@@ -2,7 +2,8 @@
 
 Etch-a-sketch project from The Odin Project, an open source webdevelopment program.
 
-topic learned
+topics learned
+
 CSS:
 
     using display: grid
